@@ -19,20 +19,12 @@ class Book{
 
     }
 
-    public function borrowBook () {
-        // if($this->availableCopies >0){
-        //     $this->availableCopies --;
-        //     // echo "Successfully borrowed {$this->title}.\n";
-        // } else {
-        //     echo "Sorry, {$this->title} is not available for borrowing.\n";
-        // }
+    public function borrowBook() {
         $this->availableCopies --;
     }
 
     public function returnBook() {
         $this->availableCopies ++;
-        // echo "Successfully returned {$this->title}.\n";
-        
     }
 }
 
